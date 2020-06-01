@@ -1,5 +1,6 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -23,13 +24,13 @@ describe('AppComponent', () => {
   it(`should have as title 'kickstand'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('kickstand');
+    expect(app.title).toEqual('Kickstand');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('kickstand app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Kickstand app is running!');
   });
 });
